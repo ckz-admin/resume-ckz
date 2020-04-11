@@ -2,6 +2,8 @@
 
 > this is a resume-ckz
 
+演示地址：https://ckz-1301576051.cos.ap-chengdu.myqcloud.com/ckz/index.html#/
+
 ## Build Setup
 
 ``` bash
