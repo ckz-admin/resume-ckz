@@ -12,8 +12,7 @@
                 <h2 v-text="item.name"></h2>
                 <p v-text="'技术栈: ' + item.skills"></p>
                 <p>职责:
-                  <template v-for="duty in item.Duty">
-                    
+                  <template v-for="duty in item.Duty">                   
                     <div v-text="duty" style="padding:5px"></div>
                   </template> 
                 </p>
@@ -33,10 +32,10 @@ export default {
       show: false,
       profiles: [
         {
-          name: '智云园区管理系统',
-          skills: 'vue vue-cli vue-router vuex axios echart element-ui sessionStorage',
-          content: '该项目是一个园区招租管理系统，通过建模对繁杂的业务进行处理，帮助管理人员更高效的管理相关数据；主要通过报表、'+
-                   '图表及表格等方式实现数 据信息化、可视化。同时，针对客户信息进行归纳总结，挖掘潜在客户，提高新客户开发能力。',
+          name: '铭慧园区',
+          skills: 'Vue Vue-router Vuex Axios V-Echarts Element-ui SessionStorage',
+          content: '该项目主要为房地产行业提供内部管理服务，通过建模对繁杂的业务进行处理，便于管理人员更高效的管理相关数据；'+
+                   '主要通过报表、图表及表格等方式实现数 据信息化、可视化。',
           Duty: ['1.使用Vue + Element-UI快速搭建页面布局'+
                 '2.通过Axios与后台数据进行交互，并对请求进行相应的操作，如添加用户认证信息',
                 '3.使用Vue-Router搭建项目路由，Vuex实现数据的共享，如状态、权限',
@@ -47,12 +46,12 @@ export default {
         },
         {
           // node express mongoose mongodb3.4 express-promise-router async/await语法
-          name: '阅书通',
-          skills: 'flex vue vue-cli Vue-Lazyload axios vuex animate',
-          content: '',
+          name: '阅书愿',
+          skills: 'Flex Vue Vue-Lazyload Axios Vuex Animate',
+          // content: '',
           // content:  '该项目是一个基于阅读书籍的平台，根据用户的需求提供免费书籍和付费书籍，付费书籍需支付相应的积分，'+
           //           '积分可以通过签到、完成阅读任务和充值获取。用户可以通过拼团购买来享受折扣优惠。',
-          Duty: ''          
+          // Duty: ''          
           // Duty: ['1.使用Flex对页面进行弹性布局',
           //       '2.引入Axios处理前后端的数据请求，合理使用部分组件进行快速开发',
           //       '3.使用Vue-Lazyload实现图片懒加载，提升页面加载性能',
@@ -83,6 +82,7 @@ export default {
     .cont;
     width: 90%;
     // border: 1px solid blue;
+    // z-index: 3;
     .item {
       background-color:whitesmoke;
       padding: 10px;

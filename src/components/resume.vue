@@ -10,7 +10,7 @@
   }"
  >
     <transition
-      :duration="{ enter: 2500, leave: 1500 }"
+     :duration="{ enter: 1000, leave: 0 }"
       :leave-active-class="'animated ' + leaveanimate"
       :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 1">
@@ -20,7 +20,7 @@
       </div>
     </transition>
     <transition
-      :duration="{ enter: 2500, leave: 1500 }"
+    :duration="{ enter: 1000, leave: 0 }"
       :leave-active-class="'animated ' + leaveanimate"
       :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 2">
@@ -30,7 +30,7 @@
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 1500 }"
+      :duration="{ enter: 1000, leave: 0 }"
       :leave-active-class="'animated ' + leaveanimate"
       :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 3">
@@ -40,7 +40,7 @@
       </div>
     </transition>
     <transition
-      :duration="{ enter: 1500, leave: 1500 }"
+      :duration="{ enter: 1000, leave: 0 }"
       :leave-active-class="'animated ' + leaveanimate"
       :enter-active-class="'animated ' + enteranimate">
       <div class="section" :style="{height: `${clientHeight}`}" v-if="init === 4">
@@ -67,13 +67,14 @@ export default {
   },
   data() {
     return {
-      // ..
-      img: require('../../static/img/41000469_p0-tags_原创,女の子,少女,千夜,loli,场景,オリジナル,ジーンズ,オリジナル1000users入り-user_千夜QYS3.jpg'),
+      img: ('static/img/41000469.jpg'),
       clientHeight: '900px',
       init: 1,
       lastscroll: 0,
-      leaveanimate: 'zoomOutUp',
-      enteranimate: 'zoomInDown'
+      leaveanimate: '',
+      enteranimate: 'animated rotateIn'
+      // zoomOutUp
+      // zoomInDown
     }
   },
   methods: {
@@ -119,7 +120,7 @@ export default {
       if (this.init === 4) {
         this.init = 1
       } else {
-        this.init = this.init + 1
+        this.init = this.init + 1;
       }
     },
     //下滑
@@ -157,6 +158,12 @@ export default {
   position: fixed;
   bottom: 20px;
   left: 47%;
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 @-moz-keyframes myfirst {
   0%, 20%, 50%, 80%, 100% {

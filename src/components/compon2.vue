@@ -3,7 +3,6 @@
     <h1>技能专长</h1>
     <transition
       :duration="{ enter: 2500, leave: 1500 }"
-      leave-active-class="animated fadeOutRight"
       enter-active-class="animated fadeInLeft">
       <div class="cont"  v-if="show">
         <template v-for="skill in skills">

@@ -7,7 +7,7 @@
       <div class="cont"  v-if="show">
         <img class="avatar" src="../../static/img/bg4.jpg" alt="">
         <!-- <h2></h2> -->
-        <p>你好，我叫陈凯泽，是一名前端开发工程师，平时喜欢捣鼓一些新玩意，如研究新的技术框架和语言，业余时间会写一些小作品</p>
+        <p style="text-indent:2em">你好，我叫陈凯泽，坐标东莞，我是一名前端工程师，平时喜欢捣鼓一些新玩意，研究新的技术框架和语言，上班之余时间会写一些小作品</p>
         <div class="state">
           <el-row :gutter="30">
             <template v-for="item in states">
@@ -30,7 +30,7 @@ export default {
     return {
       show: false,
       states: [
-        {icon: 'icon-nianling', val: '年龄/22'},
+        {icon: 'icon-nianling', val: '年龄/23'},
         {icon: 'icon-xueli', val: '学历/大专'},
         {icon: 'icon-icon-', val: '现居/东莞'},
         {icon: 'icon-zhiwei', val: '状态/离职'}

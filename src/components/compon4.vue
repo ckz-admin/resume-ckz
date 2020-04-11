@@ -1,6 +1,6 @@
 <template>
   <div class="info">
-    <h1 style="color:white">联系我/Contact</h1>
+    <h1 style="color:white">联系我</h1>
     <transition
       :duration="{ enter: 2500, leave: 1500 }"
       enter-active-class="animated fadeInDown">
@@ -43,7 +43,7 @@ export default {
       accounts: [
         {class: 'icon-GitHub', link: 'https://github.com/ckz-admin/'},
         // {class: 'icon-sf', link: '#'},
-        // {class: 'icon-zhihu', link: '#'},
+        {class: 'icon-zhihu', link: '#'},
         // {class: 'icon-xinlang', link: '#'}
       ]
     }
@@ -76,10 +76,10 @@ a {
     padding: 30px 0;
     .acount {
       width: 30%;
-      border: 1px solid blue;
+      // border: 1px solid blue;
       margin: 10px auto;
       .iconBox {
-       border: 1px solid blue;
+      //  border: 1px solid blue;
         width: 30px;
         height: 30px;
         border-radius: 20px;
