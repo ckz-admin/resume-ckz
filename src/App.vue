@@ -23,7 +23,7 @@ export default {
   color: #12181f;
   @media screen and (max-width: 768px) {
     overflow: hidden;
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 </style>
